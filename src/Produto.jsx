@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Head from "./Head";
 
 const Produto = () => {
   const [produto, setProduto] = React.useState();
@@ -19,10 +20,11 @@ const Produto = () => {
     setCarregando(true)
   }, []);
 
-  console.log(produto && produto);
+  
 
   return (
     <>
+    <Head title={"Ranek | " + params.id} />
       {!carregando && <h2>Carregando...</h2>}
       {produto && (
         <div className="gridProduto">

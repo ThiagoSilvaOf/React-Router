@@ -15,10 +15,7 @@ const Produtos = () => {
     handleFetch();
   }, []);
 
-  // function handleClick({target}){
-  //   console.log(produtos);
-  //   console.log(target);
-  // }
+ 
 
   return (
     <div className="containerProdutos animeLeft">
